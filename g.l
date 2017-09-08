@@ -1,5 +1,8 @@
 %{
 	#include <stdio.h>
+	#include <stdlib.h>
+	#define YY_DECL int yylex()
+	void yyerror(char *s);
 %}
 
 %%
