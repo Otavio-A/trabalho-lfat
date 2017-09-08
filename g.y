@@ -31,6 +31,7 @@
 %token T_ATRIB
 %token T_OPERACAO
 %token T_END
+%token T_WHILE
 %token T_DO  
 %token T_NUM
 %token T_IDENTIF;
@@ -48,12 +49,11 @@ code:
 ;
 
 vars:
-	T_VAR var_def | {}
+	T_VAR var_declaration | {}
 ;
 
 var_declaration:
-	T_IDENTIF T_DOISPONTO multi T_TIPO T_PONTEVIRG |
-	var_declaration:
+	T_IDENTIF T_DOISPONTO multi T_TIPO T_PONTEVIRG
 ;
 
 multi:

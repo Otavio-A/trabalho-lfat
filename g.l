@@ -1,6 +1,7 @@
 %{
 	#include <stdio.h>
 	#include <stdlib.h>
+	#include "y.tab.h"
 	#define YY_DECL int yylex()
 	void yyerror(char *s);
 %}
