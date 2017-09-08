@@ -1,7 +1,0 @@
-program teste1;
-var
-    num, num1: int;
-begin
-    num := 23;
-    num := 25;	
-end.

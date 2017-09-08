@@ -79,7 +79,7 @@
 
 
 /* Line 189 of yacc.c  */
-#line 83 "y.tab.c"
+#line 83 "g.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -131,31 +131,6 @@
      T_IDENTIF = 280
    };
 #endif
-/* Tokens.  */
-#define T_PROGRAM 258
-#define T_PONTEVIRG 259
-#define T_VAR 260
-#define T_TIPO 261
-#define T_VIRG 262
-#define T_PONTO 263
-#define T_DOISPONTO 264
-#define T_BEGIN 265
-#define T_IF 266
-#define T_THEN 267
-#define T_ELSE 268
-#define T_ABRE_P 269
-#define T_FECHA_P 270
-#define T_BOOL 271
-#define T_O_LOGICO 272
-#define T_COMP 273
-#define T_ATRIB 274
-#define T_OPERACAO 275
-#define T_END 276
-#define T_WHILE 277
-#define T_DO 278
-#define T_NUM 279
-#define T_IDENTIF 280
-
 
 
 
@@ -172,7 +147,7 @@ typedef union YYSTYPE
 
 
 /* Line 214 of yacc.c  */
-#line 176 "y.tab.c"
+#line 151 "g.tab.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -184,7 +159,7 @@ typedef union YYSTYPE
 
 
 /* Line 264 of yacc.c  */
-#line 188 "y.tab.c"
+#line 163 "g.tab.c"
 
 #ifdef short
 # undef short
@@ -399,7 +374,7 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  4
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   69
+#define YYLAST   70
 
 /* YYNTOKENS -- Number of terminals.  */
 #define YYNTOKENS  26
@@ -466,7 +441,7 @@ static const yytype_int8 yyrhs[] =
 {
       27,     0,    -1,     3,    25,     4,    28,    -1,    29,    32,
        8,    -1,     5,    30,    -1,    -1,    25,     9,    31,     6,
-       4,    -1,     7,    25,    -1,    -1,    10,    33,    21,     4,
+       4,    -1,     7,    25,    -1,    -1,    10,    33,    21,     8,
       -1,    25,    19,    34,     4,    33,    -1,    25,    19,    36,
        4,    33,    -1,    11,    14,    35,    15,    12,    32,    -1,
       11,    14,    35,    15,    12,    32,    13,    32,    -1,    22,
@@ -555,11 +530,11 @@ static const yytype_int8 yypact[] =
 {
       29,   -11,    43,    40,   -28,    41,    20,   -28,    37,    39,
      -28,    -5,    42,    44,    35,    38,    34,    33,   -28,    30,
-      50,   -12,   -12,   -12,    53,   -28,    54,   -28,   -28,    45,
+      50,   -12,   -12,   -12,    49,   -28,    54,   -28,   -28,    45,
       46,    -8,    47,    48,    19,    -2,    52,     4,   -28,   -28,
-      15,    49,    17,   -12,   -14,    36,    -5,    -5,    11,    52,
+      15,    51,    17,   -12,   -14,    36,    -5,    -5,    11,    52,
       37,    12,    52,    47,   -28,   -28,    48,    37,   -28,   -28,
-      51,   -28,    37,   -28
+      57,   -28,    37,   -28
 };
 
 /* YYPGOTO[NTERM-NUM].  */
@@ -582,7 +557,8 @@ static const yytype_int8 yytable[] =
       61,    27,     1,    27,    45,    63,    42,    58,    59,    28,
       48,    28,    51,     4,     5,     9,     6,    11,    13,    21,
       18,    19,    22,    23,    24,    25,    26,    38,    39,    57,
-      56,    50,    40,     0,    62,    43,   -28,     0,    44,    42
+      56,     0,    40,    50,     0,    43,   -28,     0,    44,    42,
+      62
 };
 
 static const yytype_int8 yycheck[] =
@@ -592,8 +568,9 @@ static const yytype_int8 yycheck[] =
       25,    42,    18,    50,    44,    43,    15,    15,    17,    17,
       57,    16,     3,    16,    15,    62,    17,    46,    47,    24,
       25,    24,    25,     0,     4,    25,     5,    10,     9,    14,
-       8,     7,    14,    19,    21,    25,     6,     4,     4,    23,
-      44,    12,    17,    -1,    13,    18,    20,    -1,    20,    17
+       8,     7,    14,    19,    21,    25,     6,     8,     4,    23,
+      44,    -1,    17,    12,    -1,    18,    20,    -1,    20,    17,
+      13
 };
 
 /* YYSTOS[STATE-NUM] -- The (internal number of the) accessing
@@ -603,7 +580,7 @@ static const yytype_uint8 yystos[] =
        0,     3,    27,    25,     0,     4,     5,    28,    29,    25,
       30,    10,    32,     9,    11,    22,    25,    33,     8,     7,
       31,    14,    14,    19,    21,    25,     6,    16,    24,    25,
-      34,    35,    36,    37,    35,    34,    35,    36,     4,     4,
+      34,    35,    36,    37,    35,    34,    35,    36,     8,     4,
       17,    15,    17,    18,    20,    15,     4,     4,    25,    35,
       12,    25,    35,    36,    25,    34,    37,    23,    33,    33,
       32,    32,    13,    32
@@ -1421,34 +1398,34 @@ yyreduce:
 
 /* Line 1455 of yacc.c  */
 #line 44 "g.y"
-    { printf("SUCESSO\n"); exit(0);}
+    { printf("SUCESSO\n"); exit(0);;}
     break;
 
   case 5:
 
 /* Line 1455 of yacc.c  */
 #line 52 "g.y"
-    {}
+    {;}
     break;
 
   case 8:
 
 /* Line 1455 of yacc.c  */
 #line 60 "g.y"
-    {}
+    {;}
     break;
 
   case 15:
 
 /* Line 1455 of yacc.c  */
 #line 72 "g.y"
-    {}
+    {;}
     break;
 
 
 
 /* Line 1455 of yacc.c  */
-#line 1452 "y.tab.c"
+#line 1429 "g.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1670,5 +1647,4 @@ int main() {
 }
 void yyerror(const char* s) {
 	fprintf(stderr, "ERRO: %s\n", s);
-	exit(1);
 }

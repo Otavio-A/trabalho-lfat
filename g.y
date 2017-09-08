@@ -61,7 +61,7 @@ multi:
 ; 
 
 commands:
- 	T_BEGIN command T_END T_PONTEVIRG
+ 	T_BEGIN command T_END T_PONTO
 ;
 
 command:
@@ -101,5 +101,4 @@ int main() {
 }
 void yyerror(const char* s) {
 	fprintf(stderr, "ERRO: %s\n", s);
-	exit(1);
 }

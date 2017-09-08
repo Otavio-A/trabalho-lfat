@@ -1,11 +1,11 @@
 %{
 	#include <stdio.h>
 	#include <stdlib.h>
-	#include "y.tab.h"
+	#include "g.tab.h"
 	#define YY_DECL int yylex()
 	void yyerror(char *s);
 %}
-
+%option noyywrap
 %%
 [ \t] ;
 \n
@@ -17,7 +17,7 @@
 "real"		{ return T_TIPO; }
 ","		{ return T_VIRG; }
 "."		{ return T_PONTO; }
-":"		{ return T_DOISPONTO }
+":"		{ return T_DOISPONTO; }
 "begin"		{ return T_BEGIN; }
 "if"		{ return T_IF; }
 "then"		{ return T_THEN; }

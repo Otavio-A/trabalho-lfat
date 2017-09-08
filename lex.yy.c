@@ -261,6 +261,9 @@ static void yy_flex_free YY_PROTO(( void * ));
 
 #define YY_AT_BOL() (yy_current_buffer->yy_at_bol)
 
+
+#define yywrap() 1
+#define YY_SKIP_YYWRAP
 typedef unsigned char YY_CHAR;
 FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;
 typedef int yy_state_type;
@@ -425,9 +428,10 @@ char *yytext;
 #line 2 "g.l"
 	#include <stdio.h>
 	#include <stdlib.h>
+	#include "g.tab.h"
 	#define YY_DECL int yylex()
 	void yyerror(char *s);
-#line 431 "lex.yy.c"
+#line 435 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -578,9 +582,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 8 "g.l"
+#line 9 "g.l"
 
-#line 584 "lex.yy.c"
+#line 588 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -665,210 +669,210 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 9 "g.l"
+#line 10 "g.l"
 ;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "g.l"
+#line 11 "g.l"
 
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 11 "g.l"
+#line 12 "g.l"
 { return T_PROGRAM; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 12 "g.l"
+#line 13 "g.l"
 { return T_PONTEVIRG; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 13 "g.l"
+#line 14 "g.l"
 { return T_VAR; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 14 "g.l"
+#line 15 "g.l"
 { return T_TIPO; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 15 "g.l"
+#line 16 "g.l"
 { return T_TIPO; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 16 "g.l"
+#line 17 "g.l"
 { return T_TIPO; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 17 "g.l"
+#line 18 "g.l"
 { return T_VIRG; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 18 "g.l"
+#line 19 "g.l"
 { return T_PONTO; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 19 "g.l"
-{ return T_DOISPONTO }
+#line 20 "g.l"
+{ return T_DOISPONTO; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 20 "g.l"
+#line 21 "g.l"
 { return T_BEGIN; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 21 "g.l"
+#line 22 "g.l"
 { return T_IF; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 22 "g.l"
+#line 23 "g.l"
 { return T_THEN; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 23 "g.l"
+#line 24 "g.l"
 { return T_ELSE; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 24 "g.l"
+#line 25 "g.l"
 { return T_ABRE_P; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 25 "g.l"
+#line 26 "g.l"
 { return T_FECHA_P; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 26 "g.l"
+#line 27 "g.l"
 { return T_BOOL; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 27 "g.l"
+#line 28 "g.l"
 { return T_BOOL; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 28 "g.l"
+#line 29 "g.l"
 { return T_O_LOGICO; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 29 "g.l"
+#line 30 "g.l"
 { return T_O_LOGICO; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 30 "g.l"
+#line 31 "g.l"
 { return T_O_LOGICO; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 31 "g.l"
+#line 32 "g.l"
 { return T_COMP; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 32 "g.l"
+#line 33 "g.l"
 { return T_COMP; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 33 "g.l"
+#line 34 "g.l"
 { return T_COMP; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 34 "g.l"
+#line 35 "g.l"
 { return T_COMP; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 35 "g.l"
+#line 36 "g.l"
 { return T_COMP; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 36 "g.l"
+#line 37 "g.l"
 { return T_COMP; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 37 "g.l"
+#line 38 "g.l"
 { return T_ATRIB; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 38 "g.l"
+#line 39 "g.l"
 { return T_OPERACAO; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 39 "g.l"
+#line 40 "g.l"
 { return T_OPERACAO; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 40 "g.l"
+#line 41 "g.l"
 { return T_OPERACAO; }	
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 41 "g.l"
+#line 42 "g.l"
 { return T_OPERACAO; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 42 "g.l"
+#line 43 "g.l"
 { return T_OPERACAO; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 43 "g.l"
+#line 44 "g.l"
 { return T_WHILE; }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 44 "g.l"
+#line 45 "g.l"
 { return T_DO; }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 45 "g.l"
+#line 46 "g.l"
 { return T_END; }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 46 "g.l"
+#line 47 "g.l"
 { return T_NUM; }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 47 "g.l"
+#line 48 "g.l"
 {return T_NUM; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 48 "g.l"
+#line 49 "g.l"
 { return T_IDENTIF; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 50 "g.l"
+#line 51 "g.l"
 ECHO;
 	YY_BREAK
-#line 872 "lex.yy.c"
+#line 876 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1754,7 +1758,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 50 "g.l"
+#line 51 "g.l"
 
 
 

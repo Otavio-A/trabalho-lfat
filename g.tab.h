@@ -64,31 +64,6 @@
      T_IDENTIF = 280
    };
 #endif
-/* Tokens.  */
-#define T_PROGRAM 258
-#define T_PONTEVIRG 259
-#define T_VAR 260
-#define T_TIPO 261
-#define T_VIRG 262
-#define T_PONTO 263
-#define T_DOISPONTO 264
-#define T_BEGIN 265
-#define T_IF 266
-#define T_THEN 267
-#define T_ELSE 268
-#define T_ABRE_P 269
-#define T_FECHA_P 270
-#define T_BOOL 271
-#define T_O_LOGICO 272
-#define T_COMP 273
-#define T_ATRIB 274
-#define T_OPERACAO 275
-#define T_END 276
-#define T_WHILE 277
-#define T_DO 278
-#define T_NUM 279
-#define T_IDENTIF 280
-
 
 
 
@@ -105,7 +80,7 @@ typedef union YYSTYPE
 
 
 /* Line 1676 of yacc.c  */
-#line 109 "y.tab.h"
+#line 84 "g.tab.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
